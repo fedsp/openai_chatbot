@@ -1,0 +1,1 @@
+aws s3 sync ./frontend s3://fedsp-openai-query

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script type="module" src="./movieinfo.js" defer></script>
+  <script type="module" src="./script.js" defer></script>
+</head>
+<body>
+  <div id="movie-dropdown-container">
+    <div id="movie-title">
+      Choose your movie
+    </div>
+    <select id="movie-dropdown">
+      <option value=1>Toy Story</option>
+      <option value=2>The Godfather</option>
+      <option value=3>Tropa de Elite</option>
+    </select>
+    <div id="movie-summary">
+      <div id="movie-thumbnail"></div>
+      <div id="movie-details">
+        <p><strong>Year of Launch:</strong> <span id="year"></span></p>
+        <p><strong>Director:</strong> <span id="director"></span></p>
+        <p><strong>Key Actors:</strong> <span id="actors"></span></p>
+      </div>
+    </div>
+
+  </div>
+  <div id="chat-container">
+    <div id="chat-messages"></div>
+    <div class="loading-spinner"></div>
+    <div id="user-input">
+      <input type="text" id="message-input" placeholder="Type a message...">
+      <button id="send-button">Send</button>
+    </div>
+  </div>
+</body>
+</html>
